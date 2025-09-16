@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Abdullah Ahmad - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="portfolio.jsx">
+</head>
+<body>
+    <header>
+        <a href="#hero">
+            <div class="logo">
+                <h1 style="background: linear-gradient(90deg, #c792ea, #7c3aed); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;" id="h1">Abdullah</h1>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="backgroundf"></div>
+        
+        <nav>
+            <select name="language" id="language">
+                <option value="en">EN</option>
+                <option value="ar">AR</option>
+                <option value="tr">TR</option>
+            </select>
+        </nav>
+    </header>
+       
+    <main>
+        <div class="backgroundf"></div>
+        
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-text">
+                <h2 id="h2">welcome to my portfolio website</h2>
+                <h1 >
+                    <span >I am<br></span> 
+                    <span class="Abdullah" style="background: linear-gradient(90deg, #c792ea, #7c3aed); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Abdullah Ahmad</span><br>
+                    <span > a Front-End Developer & Call Center Agent</span>
+                </h1>
+                <p id="p"><span class="white">I craft responsive websites where technologies meet creativity.</span></p>
+                <a href="#contact"><button class="contact-me" id="contactme">contact me</button></a>
+                <button class="d-cv" id="dcv"><a href="/public/img/CCCV.pdf">download cv</a> <i class="fas fa-download"></i></button>
+            </div>
+            <div class="hero-image">
+                <img src="img/portpic-removebg-preview.png" alt="Developer Image">
+            </div>
+        </section>
+        
+        <blockquote class="quote">
+            <p id="pq">"if the code work, do not touch it."</p>
+            <cite id="cite">— Eng. Abdullah Ahmad</cite>
+        </blockquote>
+          
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 id="h22">My Projects</h2>
+            <p id="ph2">Check out some of the projects I've worked on.</p>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="logo-container">
+                        <img src="img/project1.1-cover.png" alt="Project 1" class="cover-img">
+                    </div>
+                    <div class="tech" id="div">HTML, CSS, JavaScript and Node.js</div>
+                    <p class="description" id="pd">This is a responsive smart queue management system for small business website.</p>
+                    <button class="view-button">View Project</button>
+                </div>
+                <div class="project-card">
+                    <div class="logo-container">
+                        <img src="img/portwebpic.png" alt="Project 2" class="cover-img">
+                    </div>
+                    <div class="tech" id="div2">HTML, CSS, JS and React.js</div>
+                    <p class="description" id="pd2">a basic Animated potrfolio website with dark theme </p>
+                    <button class="view-button">View Project</button>
+                </div>
+                <div class="project-card">
+                    <div class="logo-container">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop" alt="E-commerce Platform" class="cover-img">
+                    </div>
+                    <div class="tech">HTML, CSS , JS, React, Node.js</div>
+                    <p class="description">Full-featured personal finance tracker (in progress)</p>
+                    <button class="view-button">View Project</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section>
+            <h2 id="h2S">Skills</h2>
+            <div class="social-links-container">
+                <div class="social-links">
+                    <a href="#" target="_blank" rel="noopener" aria-label="html" class="social-link html">
+                        <i class="fab fa-html5"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="css" class="social-link css">
+                        <i class="fab fa-css3-alt"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="js" class="social-link js">
+                        <i class="fab fa-js"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="node-js" class="social-link node-js">
+                        <i class="fab fa-node-js"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="react" class="social-link react">
+                        <i class="fab fa-react"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="git" class="social-link git">
+                        <i class="fab fa-git-alt"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener" aria-label="Database" class="social-link sql">
+                        <i class="fas fa-database"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <p class="section-desc">My academic journey and qualifications</p>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="year">09/2021 - 07/2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        
+                        <div class="timeline-info">
+                            <h3>Bachelor of Science in Software Engineering</h3>
+                            <h4>Üsküdar Üniversitesi</h4>
+                            <p>Specialized in Software Engineering with focus on web development.</p>
+                            <div class="highlights">
+                                <span class="highlight-tag">Data Structures</span>
+                                <span class="highlight-tag">Web Development</span>
+                                <span class="highlight-tag">Database Systems</span>
+                                <span class="highlight-tag">Software Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="year">08/2020 -06/2021</span>
+                    </div>
+                    <div class="timeline-content">
+                        
+                        <div class="timeline-info">
+                            <h3>English preparatory program - B2 Level (CEFR)</h3>
+                            <h4>Üsküdar Üniversitesi</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Experience Section -->
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <p class="section-desc">Professional roles and responsibilities</p>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="year">12/2024-04/2025</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-info">
+                            <h3>Call Center Agent</h3>
+                            <h4>Blue Wave Suite Hotel</h4>
+                            <p>Location: Remote.</p>
+                                <p> Main responsibilities: Handled bookings, customer queries, and follow-ups.</p>
+                            <div class="highlights">
+                                <span class="highlight-tag">Remote Support</span>
+                                <span class="highlight-tag">Bookings</span>
+                                <span class="highlight-tag">Follow-ups</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="year">08/2024 - 11/2024</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-info">
+                            <h3>Call Center Agent</h3>
+                            <h4>Vertex Solutions Ltd</h4>
+                            <p>Location: Istanbul, Turkiye.</p>
+                                <p> Main responsibilities: Managed customer inquiries and issue resolution.</p>
+                            
+                            <div class="highlights">
+                                <span class="highlight-tag">Customer Satisfaction</span>
+                                <span class="highlight-tag">Communication</span>
+                                <span class="highlight-tag">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="year">06/2024-07/2024</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-info">
+                            <h3>Call Center Agent Intern</h3>
+                            <h4>Vertex Solutions Ltd</h4>
+                            <p>Location: Istanbul, Turkiye.</p>
+                                <p> Main responsibilities: Supported inbound/outbound calls and learned CRM tools.</p>
+                            <div class="highlights">
+                                <span class="highlight-tag">Customer Support</span>
+                                <span class="highlight-tag">Call Handling</span>
+                                <span class="highlight-tag">CRM Basics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <p class="section-desc">Professional certifications and achievements</p>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Responsive Web Design</h3>
+                        <p class="cert-issuer">freeCodeCamp</p>
+                        <p class="cert-date">2025</p>
+                        <p class="cert-description">learined the fundamentals of responsive web design, including HTML, CSS, and JavaScript</p>
+                        <div class="cert-skills">
+                            <span>responsive design</span>
+                            <span>web accessibility</span>
+                            <span>cross-browser compatibility</span>
+                        </div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/YOUR_CERT_ID" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Web design course</h3>
+                        <p class="cert-issuer">Udemy</p>
+                        <p class="cert-date">2023</p>
+                        <p class="cert-description"> strong skills in creating websites with HTML, CSS and Wordpress</p>
+                        <div class="cert-skills">
+                            <span>Basic HTML</span>
+                            <span>Basic CSS</span>
+                            <span>Wordpress</span>
+                        </div>
+                        <a href="https://www.udemy.com/certificate/UC-7a4c8043-d35c-411c-a6ea-1c162b023b30/" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Foundations of Front-End Development</h3>
+                        <p class="cert-issuer">Coursera</p>
+                        <p class="cert-date">2025</p>
+                        <p class="cert-description">learned to solve problems, design algorithms, and write efficient, modular code</p>
+                        <div class="cert-skills">
+                            <span>Computational Thinking</span>
+                            <span>nd Web Development</span>
+                            <span>Integrated Development Environments</span>
+                        </div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/YOUR_CERT_ID" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>javaScript Basics</h3>
+                        <p class="cert-issuer">hackerrank</p>
+                        <p class="cert-date">2025</p>
+                        <p class="cert-description">learned the basics of javaScript programming language.</p>
+                        <div class="cert-skills">
+                            <span>variables</span>
+                            <span>data types</span>
+                            <span>functions</span>
+                        </div>
+                        <a href="https://www.hackerrank.com/certificates/54d265ea77e0" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Front-End Web Development</h3>
+                        <p class="cert-issuer">Coursera</p>
+                        <p class="cert-date">2025</p>
+                        <p class="cert-description">learned the basics of front-end web development, including HTML, CSS, and JavaScript</p>
+                        <div class="cert-skills">
+                            <span>responsive design</span>
+                            <span>web accessibility</span>
+                            <span>cross-browser compatibility</span>
+                        </div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/YOUR_CERT_ID" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Introduction to React JS</h3>
+                        <p class="cert-issuer">Cursa</p>
+                        <p class="cert-date">2025</p>
+                        <p class="cert-description">introduction to the most popular javaScript library for building user interfaces: React JS.</p>
+                        <div class="cert-skills">
+                            <span>React JS Core Principles</span>
+                            <span>JSX</span>
+                            <span>React Router for Navigation</span>
+                        </div>
+                        <a href="https://cursa.app/en/my-certificate/cert1289952a373fd8eaa0fed7a28777aa6f" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Customer Service Training</h3>
+                        <p class="cert-issuer">Alison</p>
+                        <p class="cert-date">2025</p>
+                        <p class="cert-description">learned the fundamentals of customer service, including effective communication, problem-solving, and handling difficult customers.</p>
+                        <div class="cert-skills">
+                            <span>customer satisfaction</span>
+                            <span>communication skills</span>
+                            <span>problem-solving</span>
+                        </div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/YOUR_CERT_ID" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Guide to Call Center Management</h3>
+                        <p class="cert-issuer">Alison</p>
+                        <p class="cert-date">2025</p>
+                        <p class="cert-description">learned stragies for managing inbound and outbound call centers operations.</p>
+                        <div class="cert-skills">
+                            <span>call handling time</span>
+                            <span>customer satisfcation</span>
+                            <span>service levels</span>
+                        </div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/YOUR_CERT_ID" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Introduction to Communication Skills</h3>
+                        <p class="cert-issuer">Alison</p>
+                        <p class="cert-date">2025</p>
+                        <p class="cert-description">Built strong verbal and non-verbal communication skills for clear interactions, imporeved interpersonal skills for both workplace and customer-facing situaitons.</p>
+                        <div class="cert-skills">
+                            <span>active listening</span>
+                            <span>questionin methods</span>
+                            <span>customer understanding</span>
+                        </div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/YOUR_CERT_ID" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Call Center Customer Service Training (Kwestyon Course)</h3>
+                        <p class="cert-issuer">Cursa</p>
+                        <p class="cert-date">2025</p>
+                        <p class="cert-description">Trained in proper call etiquette, tone, and professional handling of inbound/outbound calls,Learned techniques for managing difficult customers and de-escalating tense situations.</p>
+                        <div class="cert-skills">
+                            <span>multitasking</span>
+                            <span>customer scenarios</span>
+                            <span>handling difficult customers</span>
+                        </div>
+                        <a href="https://cursa.app/en/my-certificate/cert1a1c3813bf130e7ceafda931470cb203" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Underestanding Your Customers</h3>
+                        <p class="cert-issuer">OpenLearn</p>
+                        <p class="cert-date">2025</p>
+                        <p class="cert-description">learned to analyze customer behavior and preferences to tailor service approaches,Developed skills to anticipate customer needs and enhance overall satisfaction.</p>
+                        <div class="cert-skills">
+                            <span>service personality</span>
+                            <span>empathy</span>
+                            <span>problem-solving</span>
+                        </div>
+                        <a href="https://www.open.edu/openlearn/blocks/ocwstatement/statement.php?id=6285&user=4674884&f=1" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Inbound</h3>
+                        <p class="cert-issuer">HubSpot Academy</p>
+                        <p class="cert-date">2025</p>
+                        <p class="cert-description">Gained knowledge of inbound marketing principles and strategies,Learned to attract, engage, and delight customers through content and personalized experiences.</p>
+                        <div class="cert-skills">
+                            <span>customer-first thinking</span>
+                            <span>drive customer trust</span>
+                            <span>enhance sales</span>
+                        </div>
+                        <a href="https://app-eu1.hubspot.com/academy/achievements/g1sp8lrq/en/1/abdullah-ahmad/inbound" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Active Listening: Enhancing Communication Skills</h3>
+                        <p class="cert-issuer">Cursa</p>
+                        <p class="cert-date">2025</p>
+                        <p class="cert-description">Mastred active listening techniques to improve understanding and rapport,Learned to provide constructive feedback and ask clarifying questions for effective communication.</p>
+                        <div class="cert-skills">
+                            <span>two-way communication</span>
+                            <span>attentive listening</span>
+                            <span>customer needs</span>
+                        </div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/YOUR_CERT_ID" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Customer Service Essentials</h3>
+                        <p class="cert-issuer">Great Learning</p>
+                        <p class="cert-date">2025</p>
+                        <p class="cert-description">Learned essential customer service skills including communication, problem-solving, and conflict resolution,Developed strategies to handle challenging customer interactions and turn them into positive experiences.</p>
+                        <div class="cert-skills">
+                            <span>customer satisfaction</span>
+                            <span>effective communication</span>
+                            <span>conflict resolution</span>
+                        </div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/YOUR_CERT_ID" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify Certificate
+                        </a>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Effective communication in the workplace</h3>
+                        <p class="cert-issuer">The Open University</p>
+                        <p class="cert-date">2025</p>
+                        <p class="cert-description">Recognized for completing a course covering communication types, required skills, impact on perception, overcoming workplace challenges, and self-reflection on communication skills.</p>
+                        <div class="cert-skills">
+                            <span>workplace</span>
+                            <span>verbal communication</span>
+                            <span>non-verbal communication</span>
+                        </div>
+                        <a href="https://www.open.edu/openlearn/badges/badge.php?hash=8bfdde07677853023a5fc38405af1d5dc8acd308" target="_blank" class="cert-verify-btn">
+                            <i class="fas fa-external-link-alt"></i> Verify Badge
+                        </a>
+                    </div>
+                    <div class="cert-badge">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2 id="aboutme">About Me</h2>
+            <p id="pa">
+        <span class="white">
+            Hello! I'm Abdullah Ahmad, a passionate Front-End Developer and experienced Call Center Agent. I recently graduated with a Bachelor of Science in Software Engineering from Üsküdar Üniversitesi, and I am now based in Kuwait.<br><br>
+            My journey started with a deep curiosity about how the web works, which grew into a love for building responsive and user-friendly websites. I specialize in HTML, CSS, JavaScript, and modern frameworks, always aiming to combine creativity with solid functionality.<br><br>
+            In addition to my technical background, I've developed strong communication and problem-solving skills through hands-on roles in customer service. Whether I'm developing digital solutions or supporting clients, I value empathy, clarity, and continuous learning.<br><br>
+            Outside of coding and customer support, I enjoy exploring new technologies, keeping up with software trends, and collaborating on innovative projects. My goal is to make a positive impact—one line of code and one conversation at a time.<br><br>
+            <strong>Let's connect and create something amazing together!</strong>
+        </span>
+        </section>
+
+        <!-- Contact Section -->
+        <div class="contact-message" id="contact">
+            <p id="pcc">message me here:</p>
+            <div class="social-links-container">
+                <div class="social-links">
+                    <a href="mailto:abdullah.ahmad.engg@gmail.com" target="_blank" rel="noopener" aria-label="mail" class="social-link mail contact-item">
+                        <i class="fas fa-envelope contact-icon" aria-label="mail" class="social-link mail"></i>
+                    </a>
+                    <a href="https://www.instagram.com/a3zj1" target="_blank" rel="noopener" aria-label="Instagram" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abdullah-ahmad-0898a8317" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-link linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/EngAbdullah743" target="_blank" rel="noopener" aria-label="Github" class="social-link Github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p id="c">&copy; 2025 Abdullah Ahmad. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
