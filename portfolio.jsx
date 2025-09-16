@@ -132,20 +132,20 @@ const Portfolio = () => {
   const education = [
     {
       id: 1,
-      year: "2020 - 2024",
-      degree: "Bachelor of Computer Science",
-      institution: "University of Technology",
-      description: "Specialized in Software Engineering with focus on web development and database management. Graduated with honors (GPA: 3.8/4.0)",
+      year: "09/2021 - 07/2025",
+      degree: "Bachelor of Science in Software Engineering",
+      institution: "Üsküdar Üniversitesi",
+      description: "Specialized in Software Engineering with focus on web development.",
       highlights: ["Data Structures", "Web Development", "Database Systems", "Software Engineering"],
       icon: "fas fa-graduation-cap"
     },
     {
       id: 2,
-      year: "2018 - 2020",
-      degree: "High School Diploma",
-      institution: "Science and Technology High School",
-      description: "Focused on Mathematics and Computer Science. Active member of programming club and robotics team.",
-      highlights: ["Mathematics", "Physics", "Computer Science", "Robotics"],
+      year: "08/2020 - 06/2021",
+      degree: "English preparatory program - B2 Level (CEFR)",
+      institution: "Üsküdar Üniversitesi",
+      description: "Completed English language preparation program achieving B2 level proficiency.",
+      highlights: ["English Language", "Communication", "Academic Preparation"],
       icon: "fas fa-school"
     }
   ];
@@ -177,6 +177,15 @@ const Portfolio = () => {
       location: 'Istanbul, Turkiye',
       description: 'Supported inbound/outbound calls and learned CRM tools.',
       highlights: ['Customer Support', 'Call Handling', 'CRM Basics']
+    },
+    {
+      id: 4,
+      period: '03/2023 - 05/2023',
+      title: 'Front-end Internship',
+      company: 'CodeWave Technologies',
+      location: 'Istanbul, Turkiye',
+      description: 'Gained hands-on experience in front-end development technologies and modern web practices.',
+      highlights: ['Front-end Development', 'Web Technologies', 'Industry Experience']
     }
   ];
 
@@ -729,5 +738,5 @@ const Portfolio = () => {
     </div>
   );
 };
-
+<img src="img/" alt="Demo" ></img>
 export default Portfolio;
