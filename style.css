@@ -594,6 +594,8 @@ select {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .certification-card {
@@ -927,6 +929,10 @@ footer p {
     gap: 1.5rem;
   }
   
+  .certifications-grid {
+    min-width: 0; /* Allow grid to shrink below content size */
+  }
+  
   .project-card,
   .certification-card {
     margin-bottom: 1rem;
@@ -1036,7 +1042,8 @@ footer p {
   
   #about,
   #education,
-  #experience {
+  #experience,
+  #certifications {
     padding: 1.5rem 0.8rem;
     margin: 1.5rem 0.3rem;
   }
@@ -1066,6 +1073,15 @@ footer p {
   .project-card,
   .certification-card {
     padding: 1.2rem;
+    min-width: 0; /* Prevent cards from being too wide */
+    width: 100%;
+  }
+  
+  .certifications-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+    width: 100%;
+    overflow: hidden;
   }
   
   .timeline-content {
@@ -1127,7 +1143,8 @@ footer p {
   
   #about,
   #education,
-  #experience {
+  #experience,
+  #certifications {
     padding: 1.2rem 0.5rem;
     margin: 1.2rem 0.2rem;
   }
@@ -1160,6 +1177,19 @@ footer p {
   .cert-skills span {
     font-size: 0.65rem;
     padding: 0.2rem 0.4rem;
+  }
+  
+  .certifications-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.8rem;
+    width: 100%;
+    overflow: visible;
+  }
+  
+  .certification-card {
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
